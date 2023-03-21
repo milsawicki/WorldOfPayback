@@ -1,0 +1,19 @@
+/*
+   Localizable (English).strings
+   WorldOfPayback
+
+   Created by Milan Sawicki on 13/03/2023.
+   Copyright © 2023 Loyalty Partner GmbH. All rights reserved.
+ */
+
+// MARK: Common
+"common.filter" = "Filter";
+"common.retry" = "Retry";
+"common.fetching-data" = "Fetching data";
+
+// MARK: Error
+"error.offline" = "Error connecting with internet";
+
+// MARK: Transaction list
+"transaction-list.transactions" = "Transactions";
+"transaction-list.no-data" = "Sorry, no data to display.";

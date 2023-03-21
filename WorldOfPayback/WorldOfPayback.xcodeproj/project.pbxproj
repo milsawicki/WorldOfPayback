@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01331EB429B5501500403387 /* Decodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01331EB329B5501500403387 /* Decodable+JSON.swift */; };
+		01331EB729B550E000403387 /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01331EB629B550E000403387 /* TransactionsViewModel.swift */; };
+		0156BF48299FB0B300F99DD2 /* WorldOfPaybackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0156BF47299FB0B300F99DD2 /* WorldOfPaybackApp.swift */; };
+		0156BF4A299FB0B300F99DD2 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0156BF49299FB0B300F99DD2 /* TransactionListView.swift */; };
+		0156BF4C299FB0B400F99DD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0156BF4B299FB0B400F99DD2 /* Assets.xcassets */; };
+		0156BF50299FB0B400F99DD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0156BF4F299FB0B400F99DD2 /* Preview Assets.xcassets */; };
+		0156BF5A299FB0B400F99DD2 /* TransactionsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0156BF59299FB0B400F99DD2 /* TransactionsViewModelTests.swift */; };
+		0156BF8D299FB0FD00F99DD2 /* APIConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0156BF7A299FB0FD00F99DD2 /* APIConfigurable.swift */; };
+		0156BF8E299FB0FD00F99DD2 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0156BF7B299FB0FD00F99DD2 /* HTTPClient.swift */; };
+		0156BF8F299FB0FD00F99DD2 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0156BF7C299FB0FD00F99DD2 /* RequestMethod.swift */; };
+		0156BF91299FB0FD00F99DD2 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0156BF7E299FB0FD00F99DD2 /* URLRequestConvertible.swift */; };
+		0158876529C805AC00C1E1BF /* WorldOfPaybackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C11B8829C8019800B1F956 /* WorldOfPaybackUITests.swift */; };
+		0167209B29B52F81002C6207 /* PBTransactions.json in Resources */ = {isa = PBXBuildFile; fileRef = 0167209A29B52F81002C6207 /* PBTransactions.json */; };
+		0167209E29B53525002C6207 /* TransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167209D29B53525002C6207 /* TransactionService.swift */; };
+		016720A029B53562002C6207 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167209F29B53562002C6207 /* APIError.swift */; };
+		017C256429C111EA0041971E /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 017C256329C111EA0041971E /* Reachability */; };
+		017C256629C112680041971E /* TransactionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C256529C112680041971E /* TransactionDetail.swift */; };
+		017C256829C164B90041971E /* LoadableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C256729C164B90041971E /* LoadableObject.swift */; };
+		017C256A29C1FFC20041971E /* MultipleSelectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C256929C1FFC20041971E /* MultipleSelectionRow.swift */; };
+		017C256C29C214520041971E /* TransactionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C256B29C214520041971E /* TransactionDetailsView.swift */; };
+		0190425F29BE9EE700E480E8 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190425E29BE9EE700E480E8 /* Localizable.swift */; };
+		0190426029BE9F8800E480E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0190426229BE9F8800E480E8 /* Localizable.strings */; };
+		0190427029BEC03400E480E8 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190426F29BEC03400E480E8 /* Transaction.swift */; };
+		0190427229BEC0F700E480E8 /* TransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190427129BEC0F700E480E8 /* TransactionList.swift */; };
+		0190427529BEC21B00E480E8 /* TransactionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190427429BEC21B00E480E8 /* TransactionItemView.swift */; };
+		0190427D29C00E3500E480E8 /* TransactionsItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190427C29C00E3500E480E8 /* TransactionsItemViewModel.swift */; };
+		0190428029C0127600E480E8 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190427F29C0127600E480E8 /* ErrorView.swift */; };
+		0190428229C014D700E480E8 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190428129C014D700E480E8 /* AppDependencies.swift */; };
+		0190428529C016A800E480E8 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190428429C016A800E480E8 /* Reachability.swift */; };
+		01C11B6C29C7EE3600B1F956 /* TransactionDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C11B6B29C7EE3600B1F956 /* TransactionDetailsViewModel.swift */; };
+		01C11B6E29C7EF8D00B1F956 /* TransactionDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C11B6D29C7EF8D00B1F956 /* TransactionDetailsViewModelTests.swift */; };
+		01C11B7329C7F3D300B1F956 /* TransactionServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C11B7229C7F3D200B1F956 /* TransactionServiceStub.swift */; };
+		01C11B7529C7F43300B1F956 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C11B7429C7F43300B1F956 /* Router.swift */; };
+		01C11B7729C7F51400B1F956 /* ReachabilityCheckerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C11B7629C7F51400B1F956 /* ReachabilityCheckerStub.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0156BF56299FB0B400F99DD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0156BF3C299FB0B300F99DD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0156BF43299FB0B300F99DD2;
+			remoteInfo = WorldOfPayback;
+		};
+		01C11B8C29C8019800B1F956 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0156BF3C299FB0B300F99DD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0156BF43299FB0B300F99DD2;
+			remoteInfo = WorldOfPayback;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01331EB329B5501500403387 /* Decodable+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+JSON.swift"; sourceTree = "<group>"; };
+		01331EB629B550E000403387 /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
+		0156BF44299FB0B300F99DD2 /* WorldOfPayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldOfPayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0156BF47299FB0B300F99DD2 /* WorldOfPaybackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPaybackApp.swift; sourceTree = "<group>"; };
+		0156BF49299FB0B300F99DD2 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		0156BF4B299FB0B400F99DD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0156BF4D299FB0B400F99DD2 /* WorldOfPayback.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorldOfPayback.entitlements; sourceTree = "<group>"; };
+		0156BF4F299FB0B400F99DD2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0156BF55299FB0B400F99DD2 /* WorldOfPaybackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldOfPaybackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0156BF59299FB0B400F99DD2 /* TransactionsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModelTests.swift; sourceTree = "<group>"; };
+		0156BF7A299FB0FD00F99DD2 /* APIConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfigurable.swift; sourceTree = "<group>"; };
+		0156BF7B299FB0FD00F99DD2 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		0156BF7C299FB0FD00F99DD2 /* RequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		0156BF7E299FB0FD00F99DD2 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
+		0167209A29B52F81002C6207 /* PBTransactions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PBTransactions.json; sourceTree = "<group>"; };
+		0167209D29B53525002C6207 /* TransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionService.swift; sourceTree = "<group>"; };
+		0167209F29B53562002C6207 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		017C256529C112680041971E /* TransactionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetail.swift; sourceTree = "<group>"; };
+		017C256729C164B90041971E /* LoadableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableObject.swift; sourceTree = "<group>"; };
+		017C256929C1FFC20041971E /* MultipleSelectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionRow.swift; sourceTree = "<group>"; };
+		017C256B29C214520041971E /* TransactionDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsView.swift; sourceTree = "<group>"; };
+		0190425E29BE9EE700E480E8 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		0190426129BE9F8800E480E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0190426E29BEA21700E480E8 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0190426F29BEC03400E480E8 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		0190427129BEC0F700E480E8 /* TransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionList.swift; sourceTree = "<group>"; };
+		0190427429BEC21B00E480E8 /* TransactionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemView.swift; sourceTree = "<group>"; };
+		0190427C29C00E3500E480E8 /* TransactionsItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsItemViewModel.swift; sourceTree = "<group>"; };
+		0190427F29C0127600E480E8 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		0190428129C014D700E480E8 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		0190428429C016A800E480E8 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		01C11B6B29C7EE3600B1F956 /* TransactionDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsViewModel.swift; sourceTree = "<group>"; };
+		01C11B6D29C7EF8D00B1F956 /* TransactionDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		01C11B7229C7F3D200B1F956 /* TransactionServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionServiceStub.swift; sourceTree = "<group>"; };
+		01C11B7429C7F43300B1F956 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		01C11B7629C7F51400B1F956 /* ReachabilityCheckerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityCheckerStub.swift; sourceTree = "<group>"; };
+		01C11B8629C8019800B1F956 /* WorldOfPaybackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldOfPaybackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01C11B8829C8019800B1F956 /* WorldOfPaybackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPaybackUITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0156BF41299FB0B300F99DD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017C256429C111EA0041971E /* Reachability in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0156BF52299FB0B400F99DD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01C11B8329C8019800B1F956 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01331EB229B54FFB00403387 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				01331EB329B5501500403387 /* Decodable+JSON.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		01331EB529B550D300403387 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				01331EB629B550E000403387 /* TransactionsViewModel.swift */,
+				0190427C29C00E3500E480E8 /* TransactionsItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		01331EBA29B5631600403387 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				01331EBB29B5631E00403387 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		01331EBB29B5631E00403387 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0190426F29BEC03400E480E8 /* Transaction.swift */,
+				0190427129BEC0F700E480E8 /* TransactionList.swift */,
+				017C256529C112680041971E /* TransactionDetail.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		01331EBC29B5637300403387 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0190427E29C0126C00E480E8 /* Utils */,
+				0190427929C006C700E480E8 /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0156BF3B299FB0B300F99DD2 = {
+			isa = PBXGroup;
+			children = (
+				0156BF46299FB0B300F99DD2 /* WorldOfPayback */,
+				0156BF58299FB0B400F99DD2 /* WorldOfPaybackTests */,
+				01C11B8729C8019800B1F956 /* WorldOfPaybackUITests */,
+				0156BF45299FB0B300F99DD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0156BF45299FB0B300F99DD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0156BF44299FB0B300F99DD2 /* WorldOfPayback.app */,
+				0156BF55299FB0B400F99DD2 /* WorldOfPaybackTests.xctest */,
+				01C11B8629C8019800B1F956 /* WorldOfPaybackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0156BF46299FB0B300F99DD2 /* WorldOfPayback */ = {
+			isa = PBXGroup;
+			children = (
+				0190428129C014D700E480E8 /* AppDependencies.swift */,
+				0190428329C0169B00E480E8 /* Helpers */,
+				0156BF72299FB0FD00F99DD2 /* Network */,
+				01331EBC29B5637300403387 /* Presentation */,
+				01331EBA29B5631600403387 /* Domain */,
+				01331EB229B54FFB00403387 /* Extensions */,
+				01B0D43F29B52C5100756F3E /* Resources */,
+				0156BF47299FB0B300F99DD2 /* WorldOfPaybackApp.swift */,
+				0156BF4B299FB0B400F99DD2 /* Assets.xcassets */,
+				0156BF4D299FB0B400F99DD2 /* WorldOfPayback.entitlements */,
+				0156BF4E299FB0B400F99DD2 /* Preview Content */,
+			);
+			path = WorldOfPayback;
+			sourceTree = "<group>";
+		};
+		0156BF4E299FB0B400F99DD2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0156BF4F299FB0B400F99DD2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0156BF58299FB0B400F99DD2 /* WorldOfPaybackTests */ = {
+			isa = PBXGroup;
+			children = (
+				01C11B7129C7F39A00B1F956 /* Stubs */,
+				0156BF59299FB0B400F99DD2 /* TransactionsViewModelTests.swift */,
+				01C11B6D29C7EF8D00B1F956 /* TransactionDetailsViewModelTests.swift */,
+			);
+			path = WorldOfPaybackTests;
+			sourceTree = "<group>";
+		};
+		0156BF72299FB0FD00F99DD2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0167209C29B53512002C6207 /* APIService */,
+				0156BF79299FB0FD00F99DD2 /* APIClient */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0156BF79299FB0FD00F99DD2 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				0156BF7A299FB0FD00F99DD2 /* APIConfigurable.swift */,
+				0156BF7C299FB0FD00F99DD2 /* RequestMethod.swift */,
+				0156BF7E299FB0FD00F99DD2 /* URLRequestConvertible.swift */,
+				01C11B7429C7F43300B1F956 /* Router.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		0167209C29B53512002C6207 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				0156BF7B299FB0FD00F99DD2 /* HTTPClient.swift */,
+				0167209D29B53525002C6207 /* TransactionService.swift */,
+				0167209F29B53562002C6207 /* APIError.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		0190425B29BE9E7F00E480E8 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				0190426229BE9F8800E480E8 /* Localizable.strings */,
+				0190425E29BE9EE700E480E8 /* Localizable.swift */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		0190427329BEC20E00E480E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0156BF49299FB0B300F99DD2 /* TransactionListView.swift */,
+				0190427429BEC21B00E480E8 /* TransactionItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0190427929C006C700E480E8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0190427B29C006D500E480E8 /* TransactionDetails */,
+				0190427A29C006CE00E480E8 /* TransactionList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0190427A29C006CE00E480E8 /* TransactionList */ = {
+			isa = PBXGroup;
+			children = (
+				0190427329BEC20E00E480E8 /* View */,
+				01331EB529B550D300403387 /* ViewModel */,
+			);
+			path = TransactionList;
+			sourceTree = "<group>";
+		};
+		0190427B29C006D500E480E8 /* TransactionDetails */ = {
+			isa = PBXGroup;
+			children = (
+				01C11B6A29C7EE1B00B1F956 /* ViewModel */,
+				01C11B6929C7EE1500B1F956 /* View */,
+				017C256B29C214520041971E /* TransactionDetailsView.swift */,
+			);
+			path = TransactionDetails;
+			sourceTree = "<group>";
+		};
+		0190427E29C0126C00E480E8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0190427F29C0127600E480E8 /* ErrorView.swift */,
+				017C256929C1FFC20041971E /* MultipleSelectionRow.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0190428329C0169B00E480E8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0190428429C016A800E480E8 /* Reachability.swift */,
+				017C256729C164B90041971E /* LoadableObject.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		01B0D43F29B52C5100756F3E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0190425B29BE9E7F00E480E8 /* Localizable */,
+				0167209A29B52F81002C6207 /* PBTransactions.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		01C11B6929C7EE1500B1F956 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		01C11B6A29C7EE1B00B1F956 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				01C11B6B29C7EE3600B1F956 /* TransactionDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		01C11B7129C7F39A00B1F956 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				01C11B7229C7F3D200B1F956 /* TransactionServiceStub.swift */,
+				01C11B7629C7F51400B1F956 /* ReachabilityCheckerStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		01C11B8729C8019800B1F956 /* WorldOfPaybackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01C11B8829C8019800B1F956 /* WorldOfPaybackUITests.swift */,
+			);
+			path = WorldOfPaybackUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0156BF43299FB0B300F99DD2 /* WorldOfPayback */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0156BF69299FB0B400F99DD2 /* Build configuration list for PBXNativeTarget "WorldOfPayback" */;
+			buildPhases = (
+				0156BF40299FB0B300F99DD2 /* Sources */,
+				0156BF41299FB0B300F99DD2 /* Frameworks */,
+				0156BF42299FB0B300F99DD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorldOfPayback;
+			packageProductDependencies = (
+				017C256329C111EA0041971E /* Reachability */,
+			);
+			productName = WorldOfPayback;
+			productReference = 0156BF44299FB0B300F99DD2 /* WorldOfPayback.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0156BF54299FB0B400F99DD2 /* WorldOfPaybackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0156BF6C299FB0B400F99DD2 /* Build configuration list for PBXNativeTarget "WorldOfPaybackTests" */;
+			buildPhases = (
+				0156BF51299FB0B400F99DD2 /* Sources */,
+				0156BF52299FB0B400F99DD2 /* Frameworks */,
+				0156BF53299FB0B400F99DD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0156BF57299FB0B400F99DD2 /* PBXTargetDependency */,
+			);
+			name = WorldOfPaybackTests;
+			productName = WorldOfPaybackTests;
+			productReference = 0156BF55299FB0B400F99DD2 /* WorldOfPaybackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01C11B8529C8019800B1F956 /* WorldOfPaybackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01C11B8E29C8019800B1F956 /* Build configuration list for PBXNativeTarget "WorldOfPaybackUITests" */;
+			buildPhases = (
+				01C11B8229C8019800B1F956 /* Sources */,
+				01C11B8329C8019800B1F956 /* Frameworks */,
+				01C11B8429C8019800B1F956 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01C11B8D29C8019800B1F956 /* PBXTargetDependency */,
+			);
+			name = WorldOfPaybackUITests;
+			packageProductDependencies = (
+			);
+			productName = WorldOfPaybackUITests;
+			productReference = 01C11B8629C8019800B1F956 /* WorldOfPaybackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0156BF3C299FB0B300F99DD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = "Loyalty Partner GmbH";
+				TargetAttributes = {
+					0156BF43299FB0B300F99DD2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					0156BF54299FB0B400F99DD2 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0156BF43299FB0B300F99DD2;
+					};
+					01C11B8529C8019800B1F956 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0156BF43299FB0B300F99DD2;
+					};
+				};
+			};
+			buildConfigurationList = 0156BF3F299FB0B300F99DD2 /* Build configuration list for PBXProject "WorldOfPayback" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				pl,
+			);
+			mainGroup = 0156BF3B299FB0B300F99DD2;
+			packageReferences = (
+				017C256229C111EA0041971E /* XCRemoteSwiftPackageReference "Reachability" */,
+			);
+			productRefGroup = 0156BF45299FB0B300F99DD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0156BF43299FB0B300F99DD2 /* WorldOfPayback */,
+				0156BF54299FB0B400F99DD2 /* WorldOfPaybackTests */,
+				01C11B8529C8019800B1F956 /* WorldOfPaybackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0156BF42299FB0B300F99DD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0156BF50299FB0B400F99DD2 /* Preview Assets.xcassets in Resources */,
+				0190426029BE9F8800E480E8 /* Localizable.strings in Resources */,
+				0167209B29B52F81002C6207 /* PBTransactions.json in Resources */,
+				0156BF4C299FB0B400F99DD2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0156BF53299FB0B400F99DD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01C11B8429C8019800B1F956 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0156BF40299FB0B300F99DD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01C11B6C29C7EE3600B1F956 /* TransactionDetailsViewModel.swift in Sources */,
+				01331EB429B5501500403387 /* Decodable+JSON.swift in Sources */,
+				0190425F29BE9EE700E480E8 /* Localizable.swift in Sources */,
+				0167209E29B53525002C6207 /* TransactionService.swift in Sources */,
+				0190428229C014D700E480E8 /* AppDependencies.swift in Sources */,
+				017C256A29C1FFC20041971E /* MultipleSelectionRow.swift in Sources */,
+				0156BF4A299FB0B300F99DD2 /* TransactionListView.swift in Sources */,
+				0190428029C0127600E480E8 /* ErrorView.swift in Sources */,
+				016720A029B53562002C6207 /* APIError.swift in Sources */,
+				0156BF8E299FB0FD00F99DD2 /* HTTPClient.swift in Sources */,
+				0190427029BEC03400E480E8 /* Transaction.swift in Sources */,
+				017C256C29C214520041971E /* TransactionDetailsView.swift in Sources */,
+				0156BF48299FB0B300F99DD2 /* WorldOfPaybackApp.swift in Sources */,
+				0156BF91299FB0FD00F99DD2 /* URLRequestConvertible.swift in Sources */,
+				01331EB729B550E000403387 /* TransactionsViewModel.swift in Sources */,
+				0190427229BEC0F700E480E8 /* TransactionList.swift in Sources */,
+				01C11B7529C7F43300B1F956 /* Router.swift in Sources */,
+				0190427529BEC21B00E480E8 /* TransactionItemView.swift in Sources */,
+				017C256829C164B90041971E /* LoadableObject.swift in Sources */,
+				0156BF8F299FB0FD00F99DD2 /* RequestMethod.swift in Sources */,
+				0156BF8D299FB0FD00F99DD2 /* APIConfigurable.swift in Sources */,
+				0190428529C016A800E480E8 /* Reachability.swift in Sources */,
+				0190427D29C00E3500E480E8 /* TransactionsItemViewModel.swift in Sources */,
+				017C256629C112680041971E /* TransactionDetail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0156BF51299FB0B400F99DD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01C11B7329C7F3D300B1F956 /* TransactionServiceStub.swift in Sources */,
+				01C11B6E29C7EF8D00B1F956 /* TransactionDetailsViewModelTests.swift in Sources */,
+				0156BF5A299FB0B400F99DD2 /* TransactionsViewModelTests.swift in Sources */,
+				01C11B7729C7F51400B1F956 /* ReachabilityCheckerStub.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01C11B8229C8019800B1F956 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0158876529C805AC00C1E1BF /* WorldOfPaybackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0156BF57299FB0B400F99DD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0156BF43299FB0B300F99DD2 /* WorldOfPayback */;
+			targetProxy = 0156BF56299FB0B400F99DD2 /* PBXContainerItemProxy */;
+		};
+		01C11B8D29C8019800B1F956 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0156BF43299FB0B300F99DD2 /* WorldOfPayback */;
+			targetProxy = 01C11B8C29C8019800B1F956 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0190426229BE9F8800E480E8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0190426129BE9F8800E480E8 /* en */,
+				0190426E29BEA21700E480E8 /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0156BF67299FB0B400F99DD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0156BF68299FB0B400F99DD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0156BF6A299FB0B400F99DD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WorldOfPayback/WorldOfPayback.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WorldOfPayback/Preview Content\"";
+				DEVELOPMENT_TEAM = K67DDDH799;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "World of Payback";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.payback.WorldOfPayback;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0156BF6B299FB0B400F99DD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WorldOfPayback/WorldOfPayback.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WorldOfPayback/Preview Content\"";
+				DEVELOPMENT_TEAM = K67DDDH799;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "World of Payback";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.payback.WorldOfPayback;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0156BF6D299FB0B400F99DD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K67DDDH799;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.payback.WorldOfPaybackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldOfPayback.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WorldOfPayback";
+			};
+			name = Debug;
+		};
+		0156BF6E299FB0B400F99DD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K67DDDH799;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.payback.WorldOfPaybackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldOfPayback.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WorldOfPayback";
+			};
+			name = Release;
+		};
+		01C11B8F29C8019800B1F956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K67DDDH799;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.payback.WorldOfPaybackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WorldOfPayback;
+			};
+			name = Debug;
+		};
+		01C11B9029C8019800B1F956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K67DDDH799;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.payback.WorldOfPaybackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WorldOfPayback;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0156BF3F299FB0B300F99DD2 /* Build configuration list for PBXProject "WorldOfPayback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0156BF67299FB0B400F99DD2 /* Debug */,
+				0156BF68299FB0B400F99DD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0156BF69299FB0B400F99DD2 /* Build configuration list for PBXNativeTarget "WorldOfPayback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0156BF6A299FB0B400F99DD2 /* Debug */,
+				0156BF6B299FB0B400F99DD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0156BF6C299FB0B400F99DD2 /* Build configuration list for PBXNativeTarget "WorldOfPaybackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0156BF6D299FB0B400F99DD2 /* Debug */,
+				0156BF6E299FB0B400F99DD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01C11B8E29C8019800B1F956 /* Build configuration list for PBXNativeTarget "WorldOfPaybackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01C11B8F29C8019800B1F956 /* Debug */,
+				01C11B9029C8019800B1F956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		017C256229C111EA0041971E /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		017C256329C111EA0041971E /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 017C256229C111EA0041971E /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0156BF3C299FB0B300F99DD2 /* Project object */;
+}
